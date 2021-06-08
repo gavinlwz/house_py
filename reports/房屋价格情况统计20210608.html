@@ -1,0 +1,1342 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <!-- <script type="text/javascript" src="js/echarts.common.min.js"></script> -->
+    <script type="text/javascript" class="init">
+        $(document).ready(function() {
+            $('#day1').DataTable();
+            $('#day7').DataTable();
+            $('#day30').DataTable();
+        } );
+    </script>
+    <style type="text/css" media="screen">
+        body        { font-family: Microsoft YaHei,Consolas,arial,sans-serif; font-size: 80%; }
+        table       { font-size: 100%; }
+        pre         { white-space: pre-wrap;word-wrap: break-word; }
+        /* -- heading ---------------------------------------------------------------------- */
+        h1 {
+            font-size: 16pt;
+            color: gray;
+        }
+        .heading {
+            margin-top: 0ex;
+            margin-bottom: 1ex;
+        }
+        .heading .attribute {
+            margin-top: 1ex;
+            margin-bottom: 0;
+        }
+        .heading .description {
+            margin-top: 2ex;
+            margin-bottom: 3ex;
+        }
+        /* -- css div popup ------------------------------------------------------------------------ */
+        a.popup_link {
+        }
+        a.popup_link:hover {
+            color: red;
+        }
+        .popup_window {
+            display: none;
+            position: relative;
+            left: 0px;
+            top: 0px;
+            /*border: solid #627173 1px; */
+            padding: 10px;
+            /*background-color: #E6E6D6; */
+            font-family: "Lucida Console", "Courier New", Courier, monospace;
+            text-align: left;
+            font-size: 8pt;
+            /* width: 500px;*/
+        }
+        /* -- report ------------------------------------------------------------------------ */
+        #show_detail_line {
+            margin-top: 3ex;
+            margin-bottom: 1ex;
+        }
+        #result_table {
+            width: 99%;
+        }
+        #header_row {
+            font-weight: bold;
+            color: #303641;
+            background-color: #ebebeb;
+        }
+        #total_row  { font-weight: bold; }
+        .passClass  { background-color: #bdedbc; }
+        .failClass  { background-color: #ffefa4; }
+        .errorClass { background-color: #ffc9c9; }
+        .passCase   { color: #6c6; }
+        .failCase   { color: #FF6600; font-weight: bold; }
+        .errorCase  { color: #c00; font-weight: bold; }
+        .hiddenRow  { display: none; }
+        .testcase   { margin-left: 2em; }
+        /* -- ending ---------------------------------------------------------------------- */
+        #ending {
+        }
+        #div_base {
+            position:absolute;
+            top:0%;
+            left:5%;
+            right:5%;
+            width: auto;
+            height: auto;
+            margin: -15px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+
+<div id="div_base">
+
+    <div class='page-header'>
+        <h1>房屋价格情况统计</h1>
+        <p class='attribute'><strong>统计时间:</strong> 2021-06-08 13:31:14</p>
+        <p class='attribute'><strong>运行时长:</strong> 0.8326587999999999s</p>
+    </div>
+None
+None
+
+        <h2>较上29天</h2>
+        <table id="day30" class="display" style="width:100%">
+            <thead>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>新增</td>
+                <td>朝南一房+低楼层+带小院+好出租+业主诚意出售</td>
+                <td>加入对比</td>
+                <td>485万</td>
+                <td>-</td>
+                <td>单价94653元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104046375.html" target="_blank">https://sh.lianjia.com/ershoufang/107104046375.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>双南两房+交通方便+环境优美+满五V1</td>
+                <td>加入对比</td>
+                <td>630万</td>
+                <td>-</td>
+                <td>单价95253元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104042551.html" target="_blank">https://sh.lianjia.com/ershoufang/107104042551.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五且只一套+楼层好+位置好+视野开阔</td>
+                <td>加入对比</td>
+                <td>562万</td>
+                <td>-</td>
+                <td>单价91205元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103985689.html" target="_blank">https://sh.lianjia.com/ershoufang/107103985689.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>温馨一房+楼层好+采光足+户型方正</td>
+                <td>加入对比</td>
+                <td>518万</td>
+                <td>-</td>
+                <td>单价96176元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104016587.html" target="_blank">https://sh.lianjia.com/ershoufang/107104016587.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>采光好+视野开阔+近门出行方便+双房朝南</td>
+                <td>加入对比</td>
+                <td>535万</td>
+                <td>-</td>
+                <td>单价78700元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104011546.html" target="_blank">https://sh.lianjia.com/ershoufang/107104011546.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修带地暖，品牌家具家电，诚心出售！</td>
+                <td>加入对比</td>
+                <td>568万</td>
+                <td>-</td>
+                <td>单价92178元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103950746.html" target="_blank">https://sh.lianjia.com/ershoufang/107103950746.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>近漕河泾，近地铁，中低楼层，带阳台储物室</td>
+                <td>加入对比</td>
+                <td>445万</td>
+                <td>-</td>
+                <td>单价90577元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104039784.html" target="_blank">https://sh.lianjia.com/ershoufang/107104039784.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>售后公房 税费少 精装修朝南两房 精观楼层 诚意出售</td>
+                <td>加入对比</td>
+                <td>580万</td>
+                <td>-</td>
+                <td>单价87693元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103963482.html" target="_blank">https://sh.lianjia.com/ershoufang/107103963482.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>平南一二村 1室1厅 南</td>
+                <td>加入对比</td>
+                <td>405万</td>
+                <td>-</td>
+                <td>单价105938元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104052528.html" target="_blank">https://sh.lianjia.com/ershoufang/107104052528.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>平南一二村 1室1厅 南</td>
+                <td>加入对比</td>
+                <td>435万</td>
+                <td>-</td>
+                <td>单价114294元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103954454.html" target="_blank">https://sh.lianjia.com/ershoufang/107103954454.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>平南一房一厅，采光好，近地铁，带小院</td>
+                <td>加入对比</td>
+                <td>455万</td>
+                <td>-</td>
+                <td>单价99913元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103863593.html" target="_blank">https://sh.lianjia.com/ershoufang/107103863593.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>售后公房，小区景观花园位置，精装修，双南户型</td>
+                <td>加入对比</td>
+                <td>518万</td>
+                <td>-</td>
+                <td>单价84613元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104013239.html" target="_blank">https://sh.lianjia.com/ershoufang/107104013239.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>平南大两房 改过格局无浪费空间 中间楼层税费低</td>
+                <td>加入对比</td>
+                <td>630万</td>
+                <td>-</td>
+                <td>单价89362元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103982287.html" target="_blank">https://sh.lianjia.com/ershoufang/107103982287.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>售后公房税费少，景观楼层，位置好，业主诚意出售</td>
+                <td>加入对比</td>
+                <td>520万</td>
+                <td>-</td>
+                <td>单价84252元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103861642.html" target="_blank">https://sh.lianjia.com/ershoufang/107103861642.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>诚售 平南低楼层 一房， 位置好</td>
+                <td>加入对比</td>
+                <td>428万</td>
+                <td>-</td>
+                <td>单价106974元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103797531.html" target="_blank">https://sh.lianjia.com/ershoufang/107103797531.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>中间楼层，满五v1，居家装修，南 北 通，透</td>
+                <td>加入对比</td>
+                <td>260万</td>
+                <td>-</td>
+                <td>单价36112元/平米</td>
+                <td>华泽新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104034837.html" target="_blank">https://sh.lianjia.com/ershoufang/107104034837.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五税费少，南北通户型，户型正气，价格适中</td>
+                <td>加入对比</td>
+                <td>242万</td>
+                <td>-</td>
+                <td>单价21957元/平米</td>
+                <td>晨星小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103876210.html" target="_blank">https://sh.lianjia.com/ershoufang/107103876210.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>中间楼层 户型正气 采光通风好 诚意出售</td>
+                <td>加入对比</td>
+                <td>215万</td>
+                <td>-</td>
+                <td>单价23408元/平米</td>
+                <td>晨星小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103761713.html" target="_blank">https://sh.lianjia.com/ershoufang/107103761713.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修 拎包入住 好楼层 视野好 户型方正</td>
+                <td>加入对比</td>
+                <td>395万</td>
+                <td>-</td>
+                <td>单价37985元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104032039.html" target="_blank">https://sh.lianjia.com/ershoufang/107104032039.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五唯 一免个税  精装修两房  看房随时</td>
+                <td>加入对比</td>
+                <td>232万</td>
+                <td>-</td>
+                <td>单价35770元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103931616.html" target="_blank">https://sh.lianjia.com/ershoufang/107103931616.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>毛坯原始户型，业主空关，看房提前预约，房子满五年</td>
+                <td>加入对比</td>
+                <td>375万</td>
+                <td>-</td>
+                <td>单价37070元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103863038.html" target="_blank">https://sh.lianjia.com/ershoufang/107103863038.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>上叠别墅 满五V一 得房率高 装修保养好</td>
+                <td>加入对比</td>
+                <td>450万</td>
+                <td>-</td>
+                <td>单价40633元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103984232.html" target="_blank">https://sh.lianjia.com/ershoufang/107103984232.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>房子满五年v一，精装修，保养好</td>
+                <td>加入对比</td>
+                <td>310万</td>
+                <td>-</td>
+                <td>单价35735元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104011933.html" target="_blank">https://sh.lianjia.com/ershoufang/107104011933.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>新乐名苑 3室2厅 南</td>
+                <td>加入对比</td>
+                <td>385万</td>
+                <td>-</td>
+                <td>单价29827元/平米</td>
+                <td>新乐名苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103988471.html" target="_blank">https://sh.lianjia.com/ershoufang/107103988471.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修满五年没有个税、高楼层采光视野无遮挡！</td>
+                <td>加入对比</td>
+                <td>288万</td>
+                <td>-</td>
+                <td>单价37186元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103898571.html" target="_blank">https://sh.lianjia.com/ershoufang/107103898571.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>店长推荐，满五税费少，诚意出售，南北通户型</td>
+                <td>加入对比</td>
+                <td>279万</td>
+                <td>-</td>
+                <td>单价35940元/平米</td>
+                <td>华泽新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103960392.html" target="_blank">https://sh.lianjia.com/ershoufang/107103960392.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>全屋空调带地暖，靠河位置，视野好，满五免个税</td>
+                <td>加入对比</td>
+                <td>348万</td>
+                <td>-</td>
+                <td>单价40093元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103987565.html" target="_blank">https://sh.lianjia.com/ershoufang/107103987565.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五，边套户型，税费较少，业主诚意，中高楼层</td>
+                <td>加入对比</td>
+                <td>268万</td>
+                <td>-</td>
+                <td>单价34523元/平米</td>
+                <td>华泽新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103992395.html" target="_blank">https://sh.lianjia.com/ershoufang/107103992395.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>临河2房，满五v一，总价低，带花园，有车位</td>
+                <td>加入对比</td>
+                <td>299万</td>
+                <td>-</td>
+                <td>单价34547元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103922949.html" target="_blank">https://sh.lianjia.com/ershoufang/107103922949.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>售后公房，美化精装修，中间楼层，近地铁，看房有钥匙</td>
+                <td>加入对比</td>
+                <td>350万</td>
+                <td>-</td>
+                <td>单价109581元/平米</td>
+                <td>田林十四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104016193.html" target="_blank">https://sh.lianjia.com/ershoufang/107104016193.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>双南户型，精装修带地暖，少有户型，上海市模范小区</td>
+                <td>加入对比</td>
+                <td>518万</td>
+                <td>-</td>
+                <td>单价113822元/平米</td>
+                <td>田林十二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104047051.html" target="_blank">https://sh.lianjia.com/ershoufang/107104047051.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五V一，房东诚意出售，小区中间位置，配套齐全</td>
+                <td>加入对比</td>
+                <td>660万</td>
+                <td>-</td>
+                <td>单价87673元/平米</td>
+                <td>宜山路701弄 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104042330.html" target="_blank">https://sh.lianjia.com/ershoufang/107104042330.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>高品质小区+采光好+生活便利+近地铁</td>
+                <td>加入对比</td>
+                <td>2250万</td>
+                <td>-</td>
+                <td>单价106378元/平米</td>
+                <td>明园小安桥 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103322585.html" target="_blank">https://sh.lianjia.com/ershoufang/107103322585.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>电梯  正南 高区  售后公房  满五  近六院  配套成熟</td>
+                <td>加入对比</td>
+                <td>620万</td>
+                <td>-</td>
+                <td>单价87596元/平米</td>
+                <td>福苑小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103972813.html" target="_blank">https://sh.lianjia.com/ershoufang/107103972813.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>内环边上大两房 精致可拧包入住 诚意出售</td>
+                <td>加入对比</td>
+                <td>587万</td>
+                <td>-</td>
+                <td>单价73523元/平米</td>
+                <td>钦州花苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103975233.html" target="_blank">https://sh.lianjia.com/ershoufang/107103975233.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五唯 一 税费少、双轨交汇、近六院、近光启城</td>
+                <td>加入对比</td>
+                <td>369万</td>
+                <td>-</td>
+                <td>单价102047元/平米</td>
+                <td>田林十四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103999096.html" target="_blank">https://sh.lianjia.com/ershoufang/107103999096.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>此房满五售后公房，税费少，格局好，得房率高</td>
+                <td>加入对比</td>
+                <td>425万</td>
+                <td>-</td>
+                <td>单价84142元/平米</td>
+                <td>田林八村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103958078.html" target="_blank">https://sh.lianjia.com/ershoufang/107103958078.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>税费各付，房东诚意，地铁口，自带大花园</td>
+                <td>加入对比</td>
+                <td>458万</td>
+                <td>-</td>
+                <td>单价94746元/平米</td>
+                <td>宜山路701弄 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103992443.html" target="_blank">https://sh.lianjia.com/ershoufang/107103992443.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>全新精装修 静谧优雅独享小花园 满五WEI一税费少</td>
+                <td>加入对比</td>
+                <td>389万</td>
+                <td>-</td>
+                <td>单价99719元/平米</td>
+                <td>田林十三村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103908907.html" target="_blank">https://sh.lianjia.com/ershoufang/107103908907.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>全明户型｜高区双南采光｜自住百万精装｜带有产权车位</td>
+                <td>加入对比</td>
+                <td>2450万</td>
+                <td>-</td>
+                <td>单价154584元/平米</td>
+                <td>尚汇豪庭 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104015133.html" target="_blank">https://sh.lianjia.com/ershoufang/107104015133.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>配套设施齐全+交通便利,业主诚意售卖</td>
+                <td>加入对比</td>
+                <td>540万</td>
+                <td>-</td>
+                <td>单价90956元/平米</td>
+                <td>田林十四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103810206.html" target="_blank">https://sh.lianjia.com/ershoufang/107103810206.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五wei一，biantao全明，南北通透</td>
+                <td>加入对比</td>
+                <td>485万</td>
+                <td>-</td>
+                <td>单价94561元/平米</td>
+                <td>田林十三村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103912486.html" target="_blank">https://sh.lianjia.com/ershoufang/107103912486.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>田林一村中间楼层精装修南北两房</td>
+                <td>加入对比</td>
+                <td>409万</td>
+                <td>-</td>
+                <td>单价82410元/平米</td>
+                <td>田林一村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104009175.html" target="_blank">https://sh.lianjia.com/ershoufang/107104009175.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>精装修，9号15号双地铁，三期红房子大三房</td>
+                <td>加入对比</td>
+                <td>1280万</td>
+                <td>-</td>
+                <td>单价99064元/平米</td>
+                <td>长春新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104041971.html" target="_blank">https://sh.lianjia.com/ershoufang/107104041971.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>满五年weiyi的房子，带80平露台，业主诚意出售</td>
+                <td>加入对比</td>
+                <td>1670万</td>
+                <td>-</td>
+                <td>单价120188元/平米</td>
+                <td>万科华尔兹 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104043701.html" target="_blank">https://sh.lianjia.com/ershoufang/107104043701.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>田林四村 2室0厅 南</td>
+                <td>加入对比</td>
+                <td>417万</td>
+                <td>-</td>
+                <td>单价89968元/平米</td>
+                <td>田林四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104042006.html" target="_blank">https://sh.lianjia.com/ershoufang/107104042006.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>全新装修 看房方便 业主诚心出售 位置安静 采光无遮挡</td>
+                <td>加入对比</td>
+                <td>518万</td>
+                <td>-</td>
+                <td>单价69755元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107104047956.html" target="_blank">https://sh.lianjia.com/ershoufang/107104047956.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>新增</td>
+                <td>位置安静 楼层居中 业主置换诚心出售 小区临河有绿化</td>
+                <td>加入对比</td>
+                <td>513万</td>
+                <td>-</td>
+                <td>单价69664元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103766078.html" target="_blank">https://sh.lianjia.com/ershoufang/107103766078.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>满五年，满五年，精装修，精装修 有天井！</td>
+                <td>加入对比</td>
+                <td>578万</td>
+                <td>635万</td>
+                <td>单价85936元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103602101.html" target="_blank">https://sh.lianjia.com/ershoufang/107103602101.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>平南一房，诚意出售，税费少 景观楼层</td>
+                <td>加入对比</td>
+                <td>453万</td>
+                <td>460万</td>
+                <td>单价93287元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103696285.html" target="_blank">https://sh.lianjia.com/ershoufang/107103696285.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>售后公房，满五年，税费少，地段佳</td>
+                <td>加入对比</td>
+                <td>590万</td>
+                <td>610万</td>
+                <td>单价85003元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103818079.html" target="_blank">https://sh.lianjia.com/ershoufang/107103818079.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>一手动迁房，中间楼层，全明户型，诚心出售</td>
+                <td>加入对比</td>
+                <td>570万</td>
+                <td>600万</td>
+                <td>单价87330元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103916471.html" target="_blank">https://sh.lianjia.com/ershoufang/107103916471.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>近12号线地铁，边套全明，不靠路</td>
+                <td>加入对比</td>
+                <td>465万</td>
+                <td>469万</td>
+                <td>单价94667元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103892254.html" target="_blank">https://sh.lianjia.com/ershoufang/107103892254.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>满五！业主诚意出售！位置好！采光无遮挡</td>
+                <td>加入对比</td>
+                <td>580万</td>
+                <td>608万</td>
+                <td>单价82270元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103736741.html" target="_blank">https://sh.lianjia.com/ershoufang/107103736741.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>户型正气，税费少，近地铁，地段佳</td>
+                <td>加入对比</td>
+                <td>608万</td>
+                <td>638万</td>
+                <td>单价91927元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103903419.html" target="_blank">https://sh.lianjia.com/ershoufang/107103903419.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>近地铁 双南全明户型 满5W1税费少 小区位置好</td>
+                <td>加入对比</td>
+                <td>568万</td>
+                <td>580万</td>
+                <td>单价83200元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103910388.html" target="_blank">https://sh.lianjia.com/ershoufang/107103910388.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>平南一村:配套成熟+24小时安保+宜居小区+采光好</td>
+                <td>加入对比</td>
+                <td>499万</td>
+                <td>509万</td>
+                <td>单价81046元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103589486.html" target="_blank">https://sh.lianjia.com/ershoufang/107103589486.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>房改售房 税费少 近地铁12号线 采光足 看房方便</td>
+                <td>加入对比</td>
+                <td>492万</td>
+                <td>494万</td>
+                <td>单价79910元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103777855.html" target="_blank">https://sh.lianjia.com/ershoufang/107103777855.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>带90平阁楼，满五V一，拎包入住，飞机户型！！！</td>
+                <td>加入对比</td>
+                <td>255万</td>
+                <td>264万</td>
+                <td>单价23136元/平米</td>
+                <td>晨星小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103836419.html" target="_blank">https://sh.lianjia.com/ershoufang/107103836419.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>全明户型，精装修，附带院子，业主诚意出售</td>
+                <td>加入对比</td>
+                <td>548万</td>
+                <td>550万</td>
+                <td>单价68586元/平米</td>
+                <td>千鹤小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103668507.html" target="_blank">https://sh.lianjia.com/ershoufang/107103668507.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>地铁口   精装修   税费少    位置好</td>
+                <td>加入对比</td>
+                <td>389万</td>
+                <td>410万</td>
+                <td>单价82961元/平米</td>
+                <td>田林一村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103710630.html" target="_blank">https://sh.lianjia.com/ershoufang/107103710630.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>目前价比高，中间楼层，采光无遮挡，总价低，全明户型</td>
+                <td>加入对比</td>
+                <td>485万</td>
+                <td>500万</td>
+                <td>单价96422元/平米</td>
+                <td>田林十一村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103748200.html" target="_blank">https://sh.lianjia.com/ershoufang/107103748200.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>双南两房，业主诚意出售，看房方便，采光不挡</td>
+                <td>加入对比</td>
+                <td>540万</td>
+                <td>550万</td>
+                <td>单价85988元/平米</td>
+                <td>田林十四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103928111.html" target="_blank">https://sh.lianjia.com/ershoufang/107103928111.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>下降</td>
+                <td>平阳新村四街坊 2室1厅 南</td>
+                <td>加入对比</td>
+                <td>398万</td>
+                <td>415万</td>
+                <td>单价66146元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103888807.html" target="_blank">https://sh.lianjia.com/ershoufang/107103888807.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>满五年税费低 一梯两户全明户型 中间位置楼层好</td>
+                <td>加入对比</td>
+                <td>478万</td>
+                <td>470万</td>
+                <td>单价96586元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103904874.html" target="_blank">https://sh.lianjia.com/ershoufang/107103904874.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>精装修，低楼层，位置好，产权清晰，诚心出售！</td>
+                <td>加入对比</td>
+                <td>480万</td>
+                <td>468万</td>
+                <td>单价99174元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103796991.html" target="_blank">https://sh.lianjia.com/ershoufang/107103796991.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>平南低总价1房  动迁省税 边套全明</td>
+                <td>加入对比</td>
+                <td>420万</td>
+                <td>408万</td>
+                <td>单价110848元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103767465.html" target="_blank">https://sh.lianjia.com/ershoufang/107103767465.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>此房满五年，一期上叠加，采光好，纯毛坯，诚意出售</td>
+                <td>加入对比</td>
+                <td>999万</td>
+                <td>969万</td>
+                <td>单价62634元/平米</td>
+                <td>英郡雷丁小城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103794526.html" target="_blank">https://sh.lianjia.com/ershoufang/107103794526.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>《新出笋盘》《南北通》《采光无遮挡》《看房方便》</td>
+                <td>加入对比</td>
+                <td>305万</td>
+                <td>298万</td>
+                <td>单价24927元/平米</td>
+                <td>新乐名苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103229219.html" target="_blank">https://sh.lianjia.com/ershoufang/107103229219.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>上叠加，紧挨G60科创云廊，全新装修，一车库一车位</td>
+                <td>加入对比</td>
+                <td>828万</td>
+                <td>800万</td>
+                <td>单价53330元/平米</td>
+                <td>英郡雷丁小城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103920251.html" target="_blank">https://sh.lianjia.com/ershoufang/107103920251.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>万宇大三房，业主诚意出售，采光视野好</td>
+                <td>加入对比</td>
+                <td>365万</td>
+                <td>355万</td>
+                <td>单价35046元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103481141.html" target="_blank">https://sh.lianjia.com/ershoufang/107103481141.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>上升</td>
+                <td>商品房 卧室朝南  前后无遮挡 采光好 满五</td>
+                <td>加入对比</td>
+                <td>505万</td>
+                <td>470万</td>
+                <td>单价65288元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103578709.html" target="_blank">https://sh.lianjia.com/ershoufang/107103578709.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年五年 全新装修 拎包入住 随时看房</td>
+                <td>加入对比</td>
+                <td>505万</td>
+                <td>505万</td>
+                <td>单价93762元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103882285.html" target="_blank">https://sh.lianjia.com/ershoufang/107103882285.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>平南大三房 户型正气 位置好 诚意出售</td>
+                <td>加入对比</td>
+                <td>820万</td>
+                <td>820万</td>
+                <td>单价83266元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103837110.html" target="_blank">https://sh.lianjia.com/ershoufang/107103837110.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>采光通透，总价低。适合自住。。</td>
+                <td>加入对比</td>
+                <td>490万</td>
+                <td>490万</td>
+                <td>单价99960元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103675008.html" target="_blank">https://sh.lianjia.com/ershoufang/107103675008.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>主推房源，诚意出售，精装修双阳台少有户型，</td>
+                <td>加入对比</td>
+                <td>585万</td>
+                <td>585万</td>
+                <td>单价86796元/平米</td>
+                <td>平南三四村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103529182.html" target="_blank">https://sh.lianjia.com/ershoufang/107103529182.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>近地铁，一梯两户，满五年，总价低</td>
+                <td>加入对比</td>
+                <td>506万</td>
+                <td>506万</td>
+                <td>单价81548元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103814584.html" target="_blank">https://sh.lianjia.com/ershoufang/107103814584.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>售后公房，满伍唯壹，中间楼层，视野开阔，看房方便</td>
+                <td>加入对比</td>
+                <td>510万</td>
+                <td>510万</td>
+                <td>单价82833元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103951084.html" target="_blank">https://sh.lianjia.com/ershoufang/107103951084.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年，中间楼层，双南全明户型，业主诚意卖</td>
+                <td>加入对比</td>
+                <td>550万</td>
+                <td>550万</td>
+                <td>单价78015元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103640759.html" target="_blank">https://sh.lianjia.com/ershoufang/107103640759.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>此房满五名下一套税费少！户型方正，视野开阔！！</td>
+                <td>加入对比</td>
+                <td>582万</td>
+                <td>582万</td>
+                <td>单价94404元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103513836.html" target="_blank">https://sh.lianjia.com/ershoufang/107103513836.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年，不靠路，装修好，房东诚意卖</td>
+                <td>加入对比</td>
+                <td>560万</td>
+                <td>560万</td>
+                <td>单价79433元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103648166.html" target="_blank">https://sh.lianjia.com/ershoufang/107103648166.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>中间楼层，满五年，双南全明，不靠路</td>
+                <td>加入对比</td>
+                <td>540万</td>
+                <td>540万</td>
+                <td>单价88772元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103702043.html" target="_blank">https://sh.lianjia.com/ershoufang/107103702043.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新上：花园位置，精致1房，满五年，诚意出售</td>
+                <td>加入对比</td>
+                <td>418万</td>
+                <td>418万</td>
+                <td>单价104605元/平米</td>
+                <td>平南一二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103583129.html" target="_blank">https://sh.lianjia.com/ershoufang/107103583129.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五诚意出售。精装修采光好</td>
+                <td>加入对比</td>
+                <td>228万</td>
+                <td>228万</td>
+                <td>单价35917元/平米</td>
+                <td>万宇阳光苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103870555.html" target="_blank">https://sh.lianjia.com/ershoufang/107103870555.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五V一，中高楼层，房子采光好，业主置换，诚心出售</td>
+                <td>加入对比</td>
+                <td>288万</td>
+                <td>288万</td>
+                <td>单价36768元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103661008.html" target="_blank">https://sh.lianjia.com/ershoufang/107103661008.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>不满五，高层，采光好，视野好，诚意出售</td>
+                <td>加入对比</td>
+                <td>210万</td>
+                <td>210万</td>
+                <td>单价22864元/平米</td>
+                <td>晨星小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103834973.html" target="_blank">https://sh.lianjia.com/ershoufang/107103834973.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五年税费少、带大露台得房率高使用面积大！</td>
+                <td>加入对比</td>
+                <td>402万</td>
+                <td>402万</td>
+                <td>单价36243元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103684378.html" target="_blank">https://sh.lianjia.com/ershoufang/107103684378.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>上叠墅 得房率高 装修保养较新 近22号线新桥站</td>
+                <td>加入对比</td>
+                <td>450万</td>
+                <td>450万</td>
+                <td>单价40633元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103438697.html" target="_blank">https://sh.lianjia.com/ershoufang/107103438697.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>大套上叠加 婚房装修 小区中间位置 采光好</td>
+                <td>加入对比</td>
+                <td>480万</td>
+                <td>480万</td>
+                <td>单价38096元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103708238.html" target="_blank">https://sh.lianjia.com/ershoufang/107103708238.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五，南北通户型的三房，诚意出售，看房方便</td>
+                <td>加入对比</td>
+                <td>243万</td>
+                <td>243万</td>
+                <td>单价22047元/平米</td>
+                <td>晨星小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103633465.html" target="_blank">https://sh.lianjia.com/ershoufang/107103633465.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新桥首府 3室2厅 南</td>
+                <td>加入对比</td>
+                <td>300万</td>
+                <td>300万</td>
+                <td>单价32055元/平米</td>
+                <td>新桥首府 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103708929.html" target="_blank">https://sh.lianjia.com/ershoufang/107103708929.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>|六楼附七楼|带大露台|使用面积大|视野通风采光棒|</td>
+                <td>加入对比</td>
+                <td>436万</td>
+                <td>436万</td>
+                <td>单价27534元/平米</td>
+                <td>新乐雅苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103662859.html" target="_blank">https://sh.lianjia.com/ershoufang/107103662859.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>房子满五年*，下叠加带花园，房子精装修保养好。</td>
+                <td>加入对比</td>
+                <td>340万</td>
+                <td>340万</td>
+                <td>单价37171元/平米</td>
+                <td>海派青城 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103272549.html" target="_blank">https://sh.lianjia.com/ershoufang/107103272549.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五，中间楼层，采光好，视野好，诚意出售</td>
+                <td>加入对比</td>
+                <td>253万</td>
+                <td>253万</td>
+                <td>单价22965元/平米</td>
+                <td>晨星小区 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103834912.html" target="_blank">https://sh.lianjia.com/ershoufang/107103834912.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>地铁9号15号线双轨交通，99平电梯大两房</td>
+                <td>加入对比</td>
+                <td>750万</td>
+                <td>750万</td>
+                <td>单价75758元/平米</td>
+                <td>华利公寓 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103883463.html" target="_blank">https://sh.lianjia.com/ershoufang/107103883463.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>桂林路04年电梯两房，双南户型，满五唯1，看房方便</td>
+                <td>加入对比</td>
+                <td>888万</td>
+                <td>888万</td>
+                <td>单价101174元/平米</td>
+                <td>桂林新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103846458.html" target="_blank">https://sh.lianjia.com/ershoufang/107103846458.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>内环边 两梯三户 得房率高 双轨交通 开窗即景 精装</td>
+                <td>加入对比</td>
+                <td>1380万</td>
+                <td>1380万</td>
+                <td>单价107085元/平米</td>
+                <td>锦馨苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103826464.html" target="_blank">https://sh.lianjia.com/ershoufang/107103826464.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>【店长推荐】精装大两房99平 双轨交汇地铁9/15号线</td>
+                <td>加入对比</td>
+                <td>798万</td>
+                <td>798万</td>
+                <td>单价80607元/平米</td>
+                <td>明佳公寓 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103872409.html" target="_blank">https://sh.lianjia.com/ershoufang/107103872409.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>精装一房 楼层好 采光视野好 南北通透 配套设施齐全</td>
+                <td>加入对比</td>
+                <td>396万</td>
+                <td>396万</td>
+                <td>单价116130元/平米</td>
+                <td>田林十二村 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103833158.html" target="_blank">https://sh.lianjia.com/ershoufang/107103833158.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>售后公房，诚意出售，看房随时，边套全明，配套成熟</td>
+                <td>加入对比</td>
+                <td>625万</td>
+                <td>625万</td>
+                <td>单价78145元/平米</td>
+                <td>田林新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103714483.html" target="_blank">https://sh.lianjia.com/ershoufang/107103714483.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>高层景观两房   南北户型  随时看房</td>
+                <td>加入对比</td>
+                <td>595万</td>
+                <td>595万</td>
+                <td>单价77153元/平米</td>
+                <td>钦州花苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103875765.html" target="_blank">https://sh.lianjia.com/ershoufang/107103875765.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>售后公房-税无-@位置好不靠马路.不临街&南北边套全明</td>
+                <td>加入对比</td>
+                <td>668万</td>
+                <td>668万</td>
+                <td>单价83521元/平米</td>
+                <td>田林新苑 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103892400.html" target="_blank">https://sh.lianjia.com/ershoufang/107103892400.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>田林商圈 3+1房两卫  精装修  拎包入住</td>
+                <td>加入对比</td>
+                <td>890万</td>
+                <td>890万</td>
+                <td>单价79027元/平米</td>
+                <td>田林体育公寓 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103670677.html" target="_blank">https://sh.lianjia.com/ershoufang/107103670677.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>新上大一房，位置安静，采光充足，实用面积大</td>
+                <td>加入对比</td>
+                <td>375万</td>
+                <td>375万</td>
+                <td>单价80060元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103747668.html" target="_blank">https://sh.lianjia.com/ershoufang/107103747668.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>享受空中花园的生活，售后公房，复式开启三代人之家</td>
+                <td>加入对比</td>
+                <td>550万</td>
+                <td>550万</td>
+                <td>单价63518元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107102229966.html" target="_blank">https://sh.lianjia.com/ershoufang/107102229966.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>看房方便业主诚意卖，位置好视野好</td>
+                <td>加入对比</td>
+                <td>508万</td>
+                <td>508万</td>
+                <td>单价57728元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103519645.html" target="_blank">https://sh.lianjia.com/ershoufang/107103519645.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五年，全明好户型，诚意出售，采光好</td>
+                <td>加入对比</td>
+                <td>458万</td>
+                <td>458万</td>
+                <td>单价70723元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103606185.html" target="_blank">https://sh.lianjia.com/ershoufang/107103606185.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>配套齐全，交通便利，位置安静，诚意出售</td>
+                <td>加入对比</td>
+                <td>365万</td>
+                <td>365万</td>
+                <td>单价72021元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103547548.html" target="_blank">https://sh.lianjia.com/ershoufang/107103547548.html</a></td>
+                <td>链家</td>
+            </tr>
+            <tr>
+                <td>不变</td>
+                <td>满五唯 一，配套齐全，交通便利，诚意出售</td>
+                <td>加入对比</td>
+                <td>460万</td>
+                <td>460万</td>
+                <td>单价69309元/平米</td>
+                <td>平阳新村四街坊 </td>
+                <td><a href="https://sh.lianjia.com/ershoufang/107103897569.html" target="_blank">https://sh.lianjia.com/ershoufang/107103897569.html</a></td>
+                <td>链家</td>
+            </tr>
+            </tbody>
+            <tfoot>
+            <tr>
+                <th>升降标志</th>
+                <th>房屋名</th>
+                <th>房屋备注</th>
+                <th>房屋总价</th>
+                <th>房屋历史总价</th>
+                <th>房屋单价</th>
+                <th>小区名</th>
+                <th>房屋链接</th>
+                <th>来源网站</th>
+            </tr>
+            </tfoot>
+        </table>
+</div>
+</body>
+</html>
